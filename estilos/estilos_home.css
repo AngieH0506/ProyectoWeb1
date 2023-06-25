@@ -21,6 +21,34 @@
   width: 91%;
 }
 
+#always-on-top {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+#top {
+  background: #0bc260;
+  color: #ffffff;
+  border-radius: 35px 0px 0px 35px;
+  width: 65px;
+  padding: 15px;
+  cursor: pointer;
+  right: 0px;
+  border: none;
+  position: fixed;
+  z-index: 999;
+}
+
+#top:hover {
+  background: #04a44f;
+}
+
+#top * {
+  background: none;
+}
+
 #inicio > a {
   margin: 20px;
   margin-left: 30px;
@@ -152,77 +180,158 @@ input[type="search"]:focus {
 
 /* TABS */
 #tabs {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom-style: solid;
-    border-top-color: #d9d9d9;
-    border-top-style: solid;
-    border-bottom-color: #d9d9d9;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-style: solid;
+  border-top-color: #d9d9d9;
+  border-top-style: solid;
+  border-bottom-color: #d9d9d9;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 #tabs > a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 #tabs > a:hover {
-    text-decoration: underline #59CE8F;
+  text-decoration: underline #59ce8f;
 }
 
-#tabs > a:focus {
-    text-decoration: underline #59CE8F;
+.tab_text {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  text-align: justify;
+  padding: 0px 90px 60px 110px;
+  line-height: 50px;
+}
+
+.tab_text a {
+  color: #0bc260;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.tab_title {
+  font-size: 20px;
+  color: #ff1e00;
 }
 
 /* Dato */
 
-#dato{
-    background-size: cover;
-    background-color: #E8F9FD;
-    height: 359px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#dato {
+  background-size: cover;
+  background-color: #e8f9fd;
+  height: 359px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #dato > p {
-    background: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 50px 100px 50px 100px;
-    font-weight: bolder;
-    font-size: 55px;
-    text-align: center;
+  background: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 50px 100px 50px 100px;
+  font-weight: bolder;
+  font-size: 55px;
+  text-align: center;
+}
+
+/* Carousel */
+
+.gallery {
+  max-width: 100%;
+  background: #eee;
+}
+
+.gallery-cell {
+  margin-right: 0px;
+  display: flex;
+  margin: 0px 10px;
+  width: 481px;
+  height: 320px;
+  cursor: pointer;
+  counter-increment: gallery-cell;
+}
+
+/* cell number
+.gallery-cell:hover {
+  background-color: red !important;
+} */
+
+#img-carousel-1 {
+  background-image: url("../resources/region/calabria/portrait.webp");
+}
+
+#img-carousel-2 {
+  background-image: url("../resources/region/lacio/portraitcopia.webp");
+}
+
+#img-carousel-3 {
+  background-image: url("../resources/region/sicilia/portrait.webp");
+}
+
+#img-carousel-4 {
+  background-image: url("../resources/region/toscana/portrait.webp");
+}
+
+#img-carousel-5 {
+  background-image: url("../resources/region/veneto/portrait.webp");
+}
+
+#img-carousel-1, #img-carousel-2, #img-carousel-3, #img-carousel-4, #img-carousel-5 {
+  background-size: cover;
+  border-radius: 15px;
+}
+
+#carouselText {
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 50px;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+#carouselText2 {
+  font-size: px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  line-height: 50px;
+  padding: 100px;
 }
 
 /* Footer */
 
 #footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 60px 20px 60px;
-    background-color: #d9d9d9;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px 20px 60px;
+  background-color: #d9d9d9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
 }
 
 #footer * {
-    background: none;
+  background: none;
 }
 
-#footer > a,  #footer button {
-
+#footer > a,
+#footer button {
   color: #000;
   padding: 5px;
   cursor: pointer;
@@ -231,9 +340,8 @@ input[type="search"]:focus {
 }
 
 #footer > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-

@@ -1,310 +1,422 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProyectoWeb1_AngieHerrera</title>
-    <link rel="stylesheet" href="estilos/estilos_home.css">
-</head>
+    <link rel="stylesheet" href="estilos/estilos_home.css" />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+
+  <body>
     <div id="header">
-        <nav class="home_nav">
-            <div id="inicio">
-                <span class="uppercase">descubre italia</span>
-                <a href="#header">Inicio</a>
-                <a href="#">Destinos</a>
-                <a href="#footer">Quiénes somos</a>
-            </div>
-            <form class="search">
-                <input type="search" placeholder="Buscar...">
-                <button id="busqueda" type="submit">
-                    <img src="resources/home/icons/busqueda.svg" alt="iconoBusqueda" width="20px" height="20px">
-                </button>
-            </form>
-        </nav>
-
-        <div id="background">
-            <div class="title uppercase">
-                <h1>los 5 mejores lugares de italia</h1>
-                <h2>para viajar en pareja</h2>
-                <button>VER DESTINOS</button>
-            </div>
+      <nav class="home_nav">
+        <div id="inicio">
+          <span class="uppercase">descubre italia</span>
+          <a href="#header">Inicio</a>
+          <a href="#">Destinos</a>
+          <a href="#footer">Quiénes somos</a>
         </div>
-    </div>
+        <form class="search">
+          <input type="search" placeholder="Buscar..." />
+          <button id="busqueda" type="submit">
+            <img
+              src="resources/home/icons/busqueda.svg"
+              alt="iconoBusqueda"
+              width="20px"
+              height="20px"
+            />
+          </button>
+        </form>
+      </nav>
 
+      <div id="background">
+        <div class="title uppercase">
+          <h1>los 5 mejores lugares de italia</h1>
+          <h2>para viajar en pareja</h2>
+          <button>VER DESTINOS</button>
+        </div>
+        <button id="top">
+          <a href="#">
+            <img
+              src="resources/home/icons/angulo-hacia-arriba.svg"
+              alt="iconoTop"
+              width="30px"
+              height="25px"
+            />
+          </a>
+        </button>
+      </div>
+    </div>
 
     <div id="tabs">
-        <a href="#requisitos_migratorios">Requisitos Migratorios</a>
-        <a href="#consideraciones_generales">Consideraciones Generales</a>
-        <a href="#que_llevar">¿Qué llevar en tu mochila?</a>
+      <a id="rm" onclick="switchTab('requisitos_migratorios')"
+        >Requisitos Migratorios</a
+      >
+      <a id="cg" onclick="switchTab('consideraciones_generales')"
+        >Consideraciones Generales</a
+      >
+      <a id="ql" onclick="switchTab('que_llevar')"
+        >¿Qué llevar en tu mochila?</a
+      >
     </div>
 
-    
-    <div id="requisitos_migratorios">
-        <p><b>Requisitos Migratorios:</b></p>
+    <div class="tab_text">
+      <div id="requisitos_migratorios">
+        <p class="tab_title"><b>Requisitos Migratorios:</b></p>
         <ul>
-            <li>
-                <span>Visado (Países de Asia, África y algunos países de América Látina.) </span>
-                <a href="https://www.conociendoitalia.com/requisitos-para-viajar-a-italia/#visa " target="_blank">Ver
-                    lista</a>
-                </li>
-                <li>Pasaporte válido por al menos tres meses después de la fecha programada para la salida del área Schengen
-                </li>
-                <li>No aparecer en las listas de “no admisión” de la comunidad Europea</li>
-                <li>Demostrar tener medios financieros suficientes para sostenerse durante la estadía</li>
-            <li>
-                <span>Demostrar que se tiene donde dormir,</span>
-                <a href="https://www.booking.com/searchresults.es.html?region=902&aid=825997&no_rooms=1&group_adults=1&label=requisitos"
-                    target="_blank">
-                    reserva de hoteles
-                </a>
-                <span>o carta de invitación</span>
-            </li>
-            <li>
-                <span>Seguro médico internacional con una cobertura mínima de € 30,000 para gastos de hospitalización de
-                    emergencia y costos de repatriación, pueden </span>
-                    <a href="https://www.civitatis.com/es/seguro-viaje/?aid=1132&cmp=requisitos" target="_blank">reservar
-                        uno muy completo y conveniente aquí
-                </a>
-            </li>
-            <li>Un billete aéreo de ida y vuelta</li>
+          <li>
+            <span
+              >Visado (Países de Asia, África y algunos países de América
+              Látina.)
+            </span>
+            <a
+              href="https://www.conociendoitalia.com/requisitos-para-viajar-a-italia/#visa "
+              target="_blank"
+            >
+              Ver lista
+            </a>
+          </li>
+          <li>
+            Pasaporte válido por al menos tres meses después de la fecha
+            programada para la salida del área Schengen
+          </li>
+          <li>
+            No aparecer en las listas de “no admisión” de la comunidad Europea
+          </li>
+          <li>
+            Demostrar tener medios financieros suficientes para sostenerse
+            durante la estadía
+          </li>
+          <li>
+            <span>Demostrar que se tiene donde dormir,</span>
+            <a
+              href="https://www.booking.com/searchresults.es.html?region=902&aid=825997&no_rooms=1&group_adults=1&label=requisitos"
+              target="_blank"
+            >
+              reserva de hoteles
+            </a>
+            <span>o carta de invitación</span>
+          </li>
+          <li>
+            <span
+              >Seguro médico internacional con una cobertura mínima de € 30,000
+              para gastos de hospitalización de emergencia y costos de
+              repatriación, pueden
+            </span>
+            <a
+              href="https://www.civitatis.com/es/seguro-viaje/?aid=1132&cmp=requisitos"
+              target="_blank"
+            >
+              reservar uno muy completo y conveniente aquí
+            </a>
+          </li>
+          <li>Un billete aéreo de ida y vuelta</li>
         </ul>
-    </div>
-            
-            <div id="consideraciones_generales">
-        <p><b>Consideraciones generales:</b></p>
+      </div>
+
+      <div id="consideraciones_generales">
+        <p class="tab_title"><b>Consideraciones generales:</b></p>
         <div>
-            <p> <b>Italia</b>, es un país soberano transcontinental, miembro y fundador de la <b>Unión Europea</b>,
-                constituido en una república parlamentaria compuesta por <b>veinte regiones y once provincias.</b>
-            </p>
-            
-            <p> Se ubica en el centro del mar Mediterráneo, en <b>Europa meridional</b>. Ocupa la península itálica así
-                como
-                la llanura Padana, las islas de Sicilia y Cerdeña, entre otras.
-            </p>
-            
-            <p> La capital de Italia, <b>Roma</b>, ha sido durante siglos el centro político y cultural de la
-                civilización
-                occidental. Además, es la <b>ciudad santa</b> para la Iglesia católica, siendo el papa el obispo de Roma
-                y
-                encontrándose dentro de la ciudad el micro-Estado del <b>Vaticano</b>. El significado cultural del país
-                se
-                refleja en todos sus <b>Patrimonios de la Humanidad</b>, ya que tiene 58, <b>el país con mayor número
-                    del mundo</b>.
-                </p>
-            </div>
-            
-            <div>
-            <p><b>Clima</b></p>
-            <p>La climatología italiana presenta cuatro climas principales: <b>alpino, continental</b> (en la llanura
-                Padana),
-                <b>mediterráneo y subtropical</b>, pero con notables variaciones regionales. Se puede diferenciar el
-                país en
-                cuatro regiones climáticas: el clima mediterráneo a lo largo de las costas peninsulares y en las islas,
-                con veranos calurosos superando los 30 °C e inviernos suaves, los llanos del río Po, donde el clima es
-                marcadamente continentalizado, con inviernos muy fríos y veranos muy húmedos y calurosos, los Alpes, con
-                un clima de montaña marcadamente frío pero con veranos frescos, y los Apeninos, con un clima de montaña
-                más templado y cercano al mediterráneo, aunque con frecuentes precipitaciones.
-            </p>
-        </div>
-        
-        <div>
-            <p><b>Moneda:</b></p>
-            <p>
-                Euro 1 euro = 1,10 dólares
-            </p>
+          <p>
+            <b>Italia</b>, es un país soberano transcontinental, miembro y
+            fundador de la <b>Unión Europea</b>, constituido en una república
+            parlamentaria compuesta por
+            <b>veinte regiones y once provincias.</b>
+          </p>
+
+          <p>
+            Se ubica en el centro del mar Mediterráneo, en
+            <b>Europa meridional</b>. Ocupa la península itálica así como la
+            llanura Padana, las islas de Sicilia y Cerdeña, entre otras.
+          </p>
+
+          <p>
+            La capital de Italia, <b>Roma</b>, ha sido durante siglos el centro
+            político y cultural de la civilización occidental. Además, es la
+            <b>ciudad santa</b> para la Iglesia católica, siendo el papa el
+            obispo de Roma y encontrándose dentro de la ciudad el micro-Estado
+            del <b>Vaticano</b>. El significado cultural del país se refleja en
+            todos sus <b>Patrimonios de la Humanidad</b>, ya que tiene 58,
+            <b>el país con mayor número del mundo</b>.
+          </p>
         </div>
 
         <div>
-            <p><b>Dónde cambiar la moneda en euros en Italia</b></p>
-            <p>
-                En los aeropuertos y en las grandes estaciones encontrarás bancos y agencias de cambio para retirar
-                dinero o servicios relacionados. Las casas de cambio en Italia y los bancos (con cajeros automáticos 24
-                horas) están repartidos por todo el territorio; aquí puedes cambiar/comprar cheques de viaje (en dólares
-                o en euros).
-            </p>
-            <p>Aquí se enumeran las denominaciones de las monedas y billetes:</p>
-            <ul>
-                <li>Denominaciones de las monedas: 1 céntimo, 2 céntimos, 5 céntimos, 10 céntimos, 20 céntimos, 50
-                    céntimos, 1 euro, 2 euros.</li>
-                    <li>Denominaciones de los billetes: 5 euros, 10 euros, 20 euros, 50 euros, 100 euros, 200 euros.</li>
-                </ul>
-            </div>
-            
-            <div>
-                <p><b>Pagos electrónicos: ¿cuáles están disponibles?</b></p>
-                <p>
-                    Además del efectivo, puedes pagar tus compras con las tarjetas de crédito más populares. En los centros
-                    más grandes, también es posible pagar con el smartphone, mediante las distintas aplicaciones dedicadas.
-                </p>
-                <p>Actualmente, los principales circuitos de pago electrónico activos son:</p>
-                <ul>
-                    <li>Visa</li>
-                    <li>MasterCard/Cirrus/Maestro</li>
-                    <li>American Express</li>
-                    <li>Bancomat</li>
-                    <li>Postamat</li>
-                <li>Pago Bancomat</li>
-            </ul>
+          <p><b>Clima</b></p>
+          <p>
+            La climatología italiana presenta cuatro climas principales: alpino,
+            continental (en la llanura Padana), mediterráneo y subtropical, pero
+            con notables variaciones regionales. Se puede diferenciar el país en
+            cuatro regiones climáticas: el clima mediterráneo a lo largo de las
+            costas peninsulares y en las islas, con veranos calurosos superando
+            los 30 °C e inviernos suaves, los llanos del río Po, donde el clima
+            es marcadamente continentalizado, con inviernos muy fríos y veranos
+            muy húmedos y calurosos, los Alpes, con un clima de montaña
+            marcadamente frío pero con veranos frescos, y los Apeninos, con un
+            clima de montaña más templado y cercano al mediterráneo, aunque con
+            frecuentes precipitaciones.
+          </p>
         </div>
 
         <div>
-            <p><b>Propina en Italia, ¿sí o no?</b></p>
-            <p>
-                La propina no es obligatoria y en Italia no hay reglas establecidas: es habitual dejar una cantidad
-                cercana al 10% del total cuando el cliente está satisfecho con el servicio recibido.
-            </p>
-        </div>
-        
-        <div>
-            <p><b>Conexión a Internet, wifi y roaming en Italia</b></p>
-            <p>
-                Si no dispones de un plan de tarifas que te permita utilizar la red de datos sin coste adicional, es
-                aconsejable utilizar las redes wifi en Italia. Además de las redes wifi gratuitas en Italia que ofrecen
-                los hoteles y los medios de transporte, como el wifi en los trenes, es posible utilizar las que ofrecen
-                gratuitamente muchos establecimientos comerciales, como bares y restaurantes, atracciones, locales
-                culturales, etc.
-            </p>
-            <p>
-                Otro servicio muy útil es el que ofrece el proyecto "Piazza Wifi Italia", la red nacional de acceso
-                gratuito a Internet. Antes de partir, descarga la aplicación wifi.italia.it (disponible para iOS y
-                Android) y regístrate. Gracias al mapa geolocalizado (que también puedes descargar para usarlo off-line)
-                podrás localizar fácilmente la Piazza Wifi Italia más cercana a ti.
-            </p>
-            <p>
-                Sin embargo, la opción de comprar una tarjeta SIM de un operador italiano que ofrezca la cantidad de GB
-                deseada siempre sigue siendo válida.
-            </p>
-            <p>
-                En Italia, funciona la itinerancia de datos. Atención: lo mejor es informarse sobre ofertas y tarifas
-                disponibles de antemano para evitar quedarse sin crédito sin darse cuenta. Si tu plan incluye costes
-                adicionales por itinerancia, es aconsejable conectarse a una red Wi-Fi. Para obtener información sobre
-                los servicios de itinerancia y los posibles costes adicionales, puedes
-                <a href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/mobile-roaming-costs/index_es.htm"
-                target="_blank">consultar la página dedicada en europa.eu.</a>
-            </p>
-        </div>
-        
-        <div>
-            <p><b>Agua en Italia, el país de las "Fontanas"</b></p>
-            <p>
-                Donde quiera que vayas en Italia, no importa si es un pueblito o una gran ciudad, encontrarás fuentes de
-                agua potable. Se encuentran siempre y muy frecuentes, y «casi» en todas de ellas se puede beber agua
-                tranquilamente pues es limpia y 100% potable.
-            </p>
-        </div>
-        
-        <div>
-            <p><b>Idiomas</b></p>
-            <p>
-                La lengua oficial de Italia es el italiano, una lengua romance procedente del latín hablado,
-                especialmente de la variante toscana arcaica, y perteneciente a la familia italorromance de las lenguas
-                itálicas, integrantes a su vez las lenguas indoeuropeas.
-            </p>
+          <p><b>Moneda:</b></p>
+          <p>Euro 1 euro = 1,10 dólares</p>
         </div>
 
         <div>
-            <p><b>Gastronomía</b></p>
-            <p>
-                La cocina italiana está incluida dentro de la denominada gastronomía mediterránea y, como dieta
-                mediterránea, ha sido declarada Patrimonio Cultural Inmaterial de la Humanidad por la Unesco y es
-                imitada y practicada en todo el mundo. Es muy común que se conozca a la gastronomía de Italia por sus
-                platos más famosos, como son la pizza, la pasta, el risotto y el gelato, pero lo cierto es que es una
-                cocina donde existen los abundantes aromas y los sabores del mar Mediterráneo. Se trata de una cocina
-                con fuerte carácter histórico y tradicional, que ha sabido perpetuar recetas antiguas como la polenta
-                (alimento de la legión romana) o la porchetta, entre muchos otros platos italianos que hoy en día se
-                pueden degustar en cualquier lugar del mundo, así como en una típica trattoria italiana. Italia es
-                también el mayor productor de vinos a nivel mundial y posee la más grande variedad de quesos en el
-                mundo.
-            </p>
+          <p><b>Dónde cambiar la moneda en euros en Italia</b></p>
+          <p>
+            En los aeropuertos y en las grandes estaciones encontrarás bancos y
+            agencias de cambio para retirar dinero o servicios relacionados. Las
+            casas de cambio en Italia y los bancos (con cajeros automáticos 24
+            horas) están repartidos por todo el territorio; aquí puedes
+            cambiar/comprar cheques de viaje (en dólares o en euros).
+          </p>
+          <p>Aquí se enumeran las denominaciones de las monedas y billetes:</p>
+          <ul>
+            <li>
+              Denominaciones de las monedas: 1 céntimo, 2 céntimos, 5 céntimos,
+              10 céntimos, 20 céntimos, 50 céntimos, 1 euro, 2 euros.
+            </li>
+            <li>
+              Denominaciones de los billetes: 5 euros, 10 euros, 20 euros, 50
+              euros, 100 euros, 200 euros.
+            </li>
+          </ul>
         </div>
-        
+
         <div>
-            <p><b>Arte</b></p>
-            <p>
-                En Italia el enfrentamiento y convivencia con la antigüedad clásica, considerada como un legado
-                nacional, proporcionó una amplia base para una evolución estilística homogénea y de validez general. Por
-                ello, allí, es posible el surgimiento del arte renacentista y precede a todas las demás naciones. En
-                Florencia el desarrollo de una rica burguesía ayudará al despliegue de las fuerzas del Renacimiento, la
-                ciudad se convierte en punto de partida del nuevo estilo, y surgen, bajo la protección de los Médicis,
-                las primeras obras que desde aquí se van a extender al resto de Italia.
-            </p>
-            <p>
-                Fuera de Italia la Antigüedad Clásica supondrá un caudal académico asimilable, y el desarrollo del
-                Renacimiento dependerá constantemente de los impulsos marcados por Italia. Artistas importados desde
-                Italia o formados allí, hacen el papel de verdaderos transmisores.
-            </p>
+          <p><b>Pagos electrónicos: ¿cuáles están disponibles?</b></p>
+          <p>
+            Además del efectivo, puedes pagar tus compras con las tarjetas de
+            crédito más populares. En los centros más grandes, también es
+            posible pagar con el smartphone, mediante las distintas aplicaciones
+            dedicadas.
+          </p>
+          <p>
+            Actualmente, los principales circuitos de pago electrónico activos
+            son:
+          </p>
+          <ul>
+            <li>Visa</li>
+            <li>MasterCard/Cirrus/Maestro</li>
+            <li>American Express</li>
+            <li>Bancomat</li>
+            <li>Postamat</li>
+            <li>Pago Bancomat</li>
+          </ul>
         </div>
-        
-    </div>
-    
-    
-    <div id="que_llevar">
-        <p><b>¿Qué llevar en tu mochila?</b></p>
+
+        <div>
+          <p><b>Propina en Italia, ¿sí o no?</b></p>
+          <p>
+            La propina no es obligatoria y en Italia no hay reglas establecidas:
+            es habitual dejar una cantidad cercana al 10% del total cuando el
+            cliente está satisfecho con el servicio recibido.
+          </p>
+        </div>
+
+        <div>
+          <p><b>Conexión a Internet, wifi y roaming en Italia</b></p>
+          <p>
+            Si no dispones de un plan de tarifas que te permita utilizar la red
+            de datos sin coste adicional, es aconsejable utilizar las redes wifi
+            en Italia. Además de las redes wifi gratuitas en Italia que ofrecen
+            los hoteles y los medios de transporte, como el wifi en los trenes,
+            es posible utilizar las que ofrecen gratuitamente muchos
+            establecimientos comerciales, como bares y restaurantes,
+            atracciones, locales culturales, etc.
+          </p>
+          <p>
+            Otro servicio muy útil es el que ofrece el proyecto "Piazza Wifi
+            Italia", la red nacional de acceso gratuito a Internet. Antes de
+            partir, descarga la aplicación wifi.italia.it (disponible para iOS y
+            Android) y regístrate. Gracias al mapa geolocalizado (que también
+            puedes descargar para usarlo off-line) podrás localizar fácilmente
+            la Piazza Wifi Italia más cercana a ti.
+          </p>
+          <p>
+            Sin embargo, la opción de comprar una tarjeta SIM de un operador
+            italiano que ofrezca la cantidad de GB deseada siempre sigue siendo
+            válida.
+          </p>
+          <p>
+            En Italia, funciona la itinerancia de datos. Atención: lo mejor es
+            informarse sobre ofertas y tarifas disponibles de antemano para
+            evitar quedarse sin crédito sin darse cuenta. Si tu plan incluye
+            costes adicionales por itinerancia, es aconsejable conectarse a una
+            red Wi-Fi. Para obtener información sobre los servicios de
+            itinerancia y los posibles costes adicionales, puedes
+            <a
+              href="https://europa.eu/youreurope/citizens/consumers/internet-telecoms/mobile-roaming-costs/index_es.htm"
+              target="_blank"
+              >consultar la página dedicada en europa.eu.</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <p><b>Agua en Italia, el país de las "Fontanas"</b></p>
+          <p>
+            Donde quiera que vayas en Italia, no importa si es un pueblito o una
+            gran ciudad, encontrarás fuentes de agua potable. Se encuentran
+            siempre y muy frecuentes, y «casi» en todas de ellas se puede beber
+            agua tranquilamente pues es limpia y 100% potable.
+          </p>
+        </div>
+
+        <div>
+          <p><b>Idiomas</b></p>
+          <p>
+            La lengua oficial de Italia es el italiano, una lengua romance
+            procedente del latín hablado, especialmente de la variante toscana
+            arcaica, y perteneciente a la familia italorromance de las lenguas
+            itálicas, integrantes a su vez las lenguas indoeuropeas.
+          </p>
+        </div>
+
+        <div>
+          <p><b>Gastronomía</b></p>
+          <p>
+            La cocina italiana está incluida dentro de la denominada gastronomía
+            mediterránea y, como dieta mediterránea, ha sido declarada
+            Patrimonio Cultural Inmaterial de la Humanidad por la Unesco y es
+            imitada y practicada en todo el mundo. Es muy común que se conozca a
+            la gastronomía de Italia por sus platos más famosos, como son la
+            pizza, la pasta, el risotto y el gelato, pero lo cierto es que es
+            una cocina donde existen los abundantes aromas y los sabores del mar
+            Mediterráneo. Se trata de una cocina con fuerte carácter histórico y
+            tradicional, que ha sabido perpetuar recetas antiguas como la
+            polenta (alimento de la legión romana) o la porchetta, entre muchos
+            otros platos italianos que hoy en día se pueden degustar en
+            cualquier lugar del mundo, así como en una típica trattoria
+            italiana. Italia es también el mayor productor de vinos a nivel
+            mundial y posee la más grande variedad de quesos en el mundo.
+          </p>
+        </div>
+
+        <div>
+          <p><b>Arte</b></p>
+          <p>
+            En Italia el enfrentamiento y convivencia con la antigüedad clásica,
+            considerada como un legado nacional, proporcionó una amplia base
+            para una evolución estilística homogénea y de validez general. Por
+            ello, allí, es posible el surgimiento del arte renacentista y
+            precede a todas las demás naciones. En Florencia el desarrollo de
+            una rica burguesía ayudará al despliegue de las fuerzas del
+            Renacimiento, la ciudad se convierte en punto de partida del nuevo
+            estilo, y surgen, bajo la protección de los Médicis, las primeras
+            obras que desde aquí se van a extender al resto de Italia.
+          </p>
+          <p>
+            Fuera de Italia la Antigüedad Clásica supondrá un caudal académico
+            asimilable, y el desarrollo del Renacimiento dependerá
+            constantemente de los impulsos marcados por Italia. Artistas
+            importados desde Italia o formados allí, hacen el papel de
+            verdaderos transmisores.
+          </p>
+        </div>
+      </div>
+
+      <div id="que_llevar">
+        <p class="tab_title"><b>¿Qué llevar en tu mochila?</b></p>
         <ol>
-            <li>
-                Imprescindibles que meter en tu maleta
-                <ul>
-                    <li>Organizadores</li>
-                    <li>Riñonera antirrobo</li>
-                    <li>Guía de viajes</li>
-                    <li>Cámara de fotos</li>
-                    <li>Adaptadores de corriente para los enchufes</li>
-                    <li>Batería portátil para recargar el teléfono</li>
-                </ul>
-            </li>
-            <li>
-                En verano
-                <ul>
-                    <li>Escarpines</li>
-                    <li>Riñonera sumergible</li>
-                    <li>Toalla de secado rápido</li>
-                    <li>Crema solar</li>
-                    <li>Cámara acuática</li>
-                    <li>Spray anti-mosquitos</li>
-                </ul>
-            </li>
-            <li>
-                En invierno
-                <ul>
-                    <li>Paraguas plegable</li>
-                    <li>Ropa y calzado adecuado para las bajas temperaturas y/o lluvia</li>
-                </ul>
-            </li>
+          <li>
+            Imprescindibles que meter en tu maleta
+            <ul>
+              <li>Organizadores</li>
+              <li>Riñonera antirrobo</li>
+              <li>Guía de viajes</li>
+              <li>Cámara de fotos</li>
+              <li>Adaptadores de corriente para los enchufes</li>
+              <li>Batería portátil para recargar el teléfono</li>
+            </ul>
+          </li>
+          <li>
+            En verano
+            <ul>
+              <li>Escarpines</li>
+              <li>Riñonera sumergible</li>
+              <li>Toalla de secado rápido</li>
+              <li>Crema solar</li>
+              <li>Cámara acuática</li>
+              <li>Spray anti-mosquitos</li>
+            </ul>
+          </li>
+          <li>
+            En invierno
+            <ul>
+              <li>Paraguas plegable</li>
+              <li>
+                Ropa y calzado adecuado para las bajas temperaturas y/o lluvia
+              </li>
+            </ul>
+          </li>
         </ol>
+      </div>
     </div>
 
-
-    
     <div id="dato">
-        <p>
-            Sus impresionantes paisajes, su rica historia y deliciosa comida harán que tu viaje a Italia sea
-            inolvidable.
-        </p>
+      <p>
+        Sus impresionantes paisajes, su rica historia y deliciosa comida harán
+        que tu viaje a Italia sea inolvidable.
+      </p>
     </div>
 
+    <div id="carousel">
+      <p id="carouselText">Destinos recomendados para tí</p>
+      <div
+        class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true }'
+      >
+        <div id="img-carousel-1" class="gallery-cell"></div>
+        <div id="img-carousel-2" class="gallery-cell"></div>
+        <div id="img-carousel-3" class="gallery-cell"></div>
+        <div id="img-carousel-4" class="gallery-cell"></div>
+        <div id="img-carousel-5" class="gallery-cell"></div>
+      </div>
+      <br />
+      <p id="carouselText2">"Seremos la guía y tu el capitán"</p>
+    </div>
 
     <div id="footer">
-        <div>
-            <p>Diseño y Producción - Angie Herrera</p>
-            <p>Sígueme</p>
-            <button id="">
-                <img src="resources/home/icons/linkedin.svg" alt="linkedin" width="30px" height="30px">
-            </button>
-            <button id="">
-                <img src="resources/home/icons/github.svg" alt="github" width="30px" height="30px">
-            </button>
-        </div>
-        <a href="">
-            <img src="resources/home/icons/cuota.svg" alt="compartir" width="25px" height="25px">
-            Compartir
-        </a>
+      <div>
+        <p>Diseño y Producción - Angie Herrera</p>
+        <p>Sígueme</p>
+        <button id="">
+          <img
+            src="resources/home/icons/linkedin.svg"
+            alt="linkedin"
+            width="30px"
+            height="30px"
+          />
+        </button>
+        <button id="">
+          <img
+            src="resources/home/icons/github.svg"
+            alt="github"
+            width="30px"
+            height="30px"
+          />
+        </button>
+      </div>
+      <a href="">
+        <img
+          src="resources/home/icons/cuota.svg"
+          alt="compartir"
+          width="25px"
+          height="25px"
+        />
+        Compartir
+      </a>
     </div>
 
-
     <script src="js/funcionalidad_home.js"></script>
-</body>
-
+  </body>
 </html>
