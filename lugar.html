@@ -1,107 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProyectoWeb1_AngieHerrera</title>
-    <link rel="stylesheet" href="estilos/estilos_lugar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="estilos/estilos_lugar.css" />
+  </head>
+
+  <body>
     <div id="header">
-        <nav class="home_nav">
-          <div id="inicio">
-            <span class="uppercase">descubre italia</span>
-            <a href="#header">Inicio</a>
-            <a href="#">Destinos</a>
-            <a href="#footer">Quiénes somos</a>
-          </div>
-          <form class="search">
-            <input type="search" placeholder="Buscar..." />
-            <button id="busqueda" type="submit">
-              <img
-                src="resources/home/icons/busqueda.svg"
-                alt="iconoBusqueda"
-                width="20px"
-                height="20px"
-              />
-            </button>
-          </form>
-        </nav>
-  
-        <div id="background">
-          <div class="title">
-            <h1>Lacio</h1>
-            <h2>Centro de Italia</h2>
-          </div>
-          <button id="top">
-            <a href="#">
-              <img
-                src="resources/home/icons/angulo-hacia-arriba.svg"
-                alt="iconoTop"
-                width="30px"
-                height="25px"
-              />
-            </a>
-          </button>
+      <nav class="home_nav">
+        <div id="inicio">
+          <span class="uppercase">descubre italia</span>
+          <a href="#header">Inicio</a>
+          <a href="#">Destinos</a>
+          <a href="#footer">Quiénes somos</a>
         </div>
+        <form class="search">
+          <input type="search" placeholder="Buscar..." />
+          <button id="busqueda" type="submit">
+            <img
+              src="resources/home/icons/busqueda.svg"
+              alt="iconoBusqueda"
+              width="20px"
+              height="20px"
+            />
+          </button>
+        </form>
+      </nav>
+
+      <div id="background">
+        <div class="title">
+          <h1>Lacio</h1>
+          <h2>Centro de Italia</h2>
+        </div>
+        <button id="top">
+          <a href="#">
+            <img
+              src="resources/home/icons/angulo-hacia-arriba.svg"
+              alt="iconoTop"
+              width="30px"
+              height="25px"
+            />
+          </a>
+        </button>
+      </div>
     </div>
 
     <div id="dato">
-        <p>
-            Roma, la capital de Italia y un museo al aire libre único en el mundo, es suficiente para hacer del Lacio una de las regiones más bellas e interesantes. Incluso en términos paisajísticos, cuenta con una zona de gran impacto y notable variedad, con su largo litoral, sus hermosas colinas y sus Apeninos. Un destino del que enamorarse.
-        </p>
+      <p>
+        Roma, la capital de Italia y un museo al aire libre único en el mundo,
+        es suficiente para hacer del Lacio una de las regiones más bellas e
+        interesantes. Incluso en términos paisajísticos, cuenta con una zona de
+        gran impacto y notable variedad, con su largo litoral, sus hermosas
+        colinas y sus Apeninos. Un destino del que enamorarse.
+      </p>
     </div>
 
     <div id="tabs">
-        <a id="rm" onclick="switchTab('requisitos_migratorios')"
-          >¿Cómo movilizarse?</a
-        >
-        <a id="cg" onclick="switchTab('consideraciones_generales')"
-          >¿Dónde ir?</a
-        >
-        <a id="ql" onclick="switchTab('que_llevar')"
-          >¿Qué hacer?</a
-        >
+      <a id="cm" onclick="switchTab('como_moverse')">¿Cómo movilizarse?</a>
+      <a id="di" onclick="switchTab('donde_ir')">¿Dónde ir?</a>
+      <a id="qh" onclick="switchTab('que_hacer')">¿Qué hacer?</a>
     </div>
 
+    <div>
+      <div id="como_moverse">
+        <p>
+          Puedes encontrar información sobre como desplazarte
+          <a href="https://www.visitlazio.com/muoversi-nel-lazio/ ">aquí</a>
+        </p>
+      </div>
 
+      <div id="donde_ir">
+        <div
+          onclick=""
+          id="img-destino-1"
+          class="destination"
+        >
+          <div class="card-title-container">
+            <span class="card-title">Rieti</span>
+            <span class="card-subtitle">Tras las huellas de los Sabatini</span>
+          </div>
+        </div>
+        <div
+          onclick=""
+          id="img-destino-2"
+          class="destination"
+        >
+          <div class="card-title-container">
+            <span class="card-title">Roma</span>
+            <span class="card-subtitle">El irresistible encanto de la Ciudad Eterna</span>
+          </div>
+        </div>
+        <div
+          onclick=""
+          id="img-destino-3"
+          class="destination"
+        >
+          <div class="card-title-container">
+            <span class="card-title">Viterbo</span>
+            <span class="card-subtitle">La región de Tuscia</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="que_hacer">
+        <p class="tab_title"><b>3</b></p>
+      </div>
+    </div>
 
     <div id="footer">
-        <div>
-          <p>Diseño y Producción - Angie Herrera</p>
-          <p>Sígueme</p>
-          <button id="">
-            <img
-              src="resources/home/icons/linkedin.svg"
-              alt="linkedin"
-              width="30px"
-              height="30px"
-            />
-          </button>
-          <button id="">
-            <img
-              src="resources/home/icons/github.svg"
-              alt="github"
-              width="30px"
-              height="30px"
-            />
-          </button>
-        </div>
-        <a href="">
+      <div>
+        <p>Diseño y Producción - Angie Herrera</p>
+        <p>Sígueme</p>
+        <button id="">
           <img
-            src="resources/home/icons/cuota.svg"
-            alt="compartir"
-            width="25px"
-            height="25px"
+            src="resources/home/icons/linkedin.svg"
+            alt="linkedin"
+            width="30px"
+            height="30px"
           />
-          Compartir
-        </a>
+        </button>
+        <button id="">
+          <img
+            src="resources/home/icons/github.svg"
+            alt="github"
+            width="30px"
+            height="30px"
+          />
+        </button>
+      </div>
+      <a href="">
+        <img
+          src="resources/home/icons/cuota.svg"
+          alt="compartir"
+          width="25px"
+          height="25px"
+        />
+        Compartir
+      </a>
     </div>
 
-
-
-
-
     <script src="js/funcionalidad_lugar.js"></script>
-</body>
+  </body>
 </html>
