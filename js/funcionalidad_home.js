@@ -55,5 +55,5 @@ function openRegion(region) {
   const url = window.location.origin;
 
 
-  window.open(`../lugar.html?region=${region}`, "");
+  window.open(`${url}/lugar.html?region=${region}`, "");
 }
