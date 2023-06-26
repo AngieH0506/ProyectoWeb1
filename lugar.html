@@ -7,7 +7,96 @@
     <link rel="stylesheet" href="estilos/estilos_lugar.css">
 </head>
 <body>
-    
+    <div id="header">
+        <nav class="home_nav">
+          <div id="inicio">
+            <span class="uppercase">descubre italia</span>
+            <a href="#header">Inicio</a>
+            <a href="#">Destinos</a>
+            <a href="#footer">Quiénes somos</a>
+          </div>
+          <form class="search">
+            <input type="search" placeholder="Buscar..." />
+            <button id="busqueda" type="submit">
+              <img
+                src="resources/home/icons/busqueda.svg"
+                alt="iconoBusqueda"
+                width="20px"
+                height="20px"
+              />
+            </button>
+          </form>
+        </nav>
+  
+        <div id="background">
+          <div class="title">
+            <h1>Lacio</h1>
+            <h2>Centro de Italia</h2>
+          </div>
+          <button id="top">
+            <a href="#">
+              <img
+                src="resources/home/icons/angulo-hacia-arriba.svg"
+                alt="iconoTop"
+                width="30px"
+                height="25px"
+              />
+            </a>
+          </button>
+        </div>
+    </div>
+
+    <div id="dato">
+        <p>
+            Roma, la capital de Italia y un museo al aire libre único en el mundo, es suficiente para hacer del Lacio una de las regiones más bellas e interesantes. Incluso en términos paisajísticos, cuenta con una zona de gran impacto y notable variedad, con su largo litoral, sus hermosas colinas y sus Apeninos. Un destino del que enamorarse.
+        </p>
+    </div>
+
+    <div id="tabs">
+        <a id="rm" onclick="switchTab('requisitos_migratorios')"
+          >¿Cómo movilizarse?</a
+        >
+        <a id="cg" onclick="switchTab('consideraciones_generales')"
+          >¿Dónde ir?</a
+        >
+        <a id="ql" onclick="switchTab('que_llevar')"
+          >¿Qué hacer?</a
+        >
+    </div>
+
+
+
+    <div id="footer">
+        <div>
+          <p>Diseño y Producción - Angie Herrera</p>
+          <p>Sígueme</p>
+          <button id="">
+            <img
+              src="resources/home/icons/linkedin.svg"
+              alt="linkedin"
+              width="30px"
+              height="30px"
+            />
+          </button>
+          <button id="">
+            <img
+              src="resources/home/icons/github.svg"
+              alt="github"
+              width="30px"
+              height="30px"
+            />
+          </button>
+        </div>
+        <a href="">
+          <img
+            src="resources/home/icons/cuota.svg"
+            alt="compartir"
+            width="25px"
+            height="25px"
+          />
+          Compartir
+        </a>
+    </div>
 
 
 

@@ -257,7 +257,6 @@ input[type="search"]:focus {
 }
 
 .gallery-cell {
-  margin-right: 0px;
   display: flex;
   margin: 0px 10px;
   width: 481px;
@@ -291,7 +290,38 @@ input[type="search"]:focus {
   background-image: url("../resources/region/veneto/portrait.webp");
 }
 
-#img-carousel-1, #img-carousel-2, #img-carousel-3, #img-carousel-4, #img-carousel-5 {
+.card-title-container {
+  height: 80px;
+  position: relative;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(217, 217, 217, 0.6);
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card-title,
+.card-subtitle {
+  background: none;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-subtitle {
+  font-size: 20px;
+}
+
+#img-carousel-1,
+#img-carousel-2,
+#img-carousel-3,
+#img-carousel-4,
+#img-carousel-5 {
   background-size: cover;
   border-radius: 15px;
 }
@@ -302,6 +332,7 @@ input[type="search"]:focus {
   text-align: center;
   line-height: 50px;
   padding-top: 100px;
+  padding-bottom: 50px;
   font-weight: bold;
 }
 
@@ -310,7 +341,7 @@ input[type="search"]:focus {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: right;
   line-height: 50px;
-  padding: 100px;
+  padding: 50px 100px 100px 0px;
 }
 
 /* Footer */

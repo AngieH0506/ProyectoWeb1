@@ -50,3 +50,10 @@ function switchTab(tabName = "requisitos_migratorios") {
       break;
   }
 }
+
+function openRegion(region) {
+  const url = window.location.origin;
+
+
+  window.open(`${url}/lugar.html?region=${region}`, "");
+}
