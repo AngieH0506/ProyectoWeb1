@@ -193,6 +193,12 @@ input[type="search"]:focus {
     padding: 20px;
 }
 
+/* compartir.html */
+
+#no_compartir{
+    background-color: #ff1e00;
+    margin: 200px 0;
+}
 
 
 

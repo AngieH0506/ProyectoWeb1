@@ -178,6 +178,13 @@ input[type="search"]:focus {
   background: #c61700;
 }
 
+#buttonHome{
+  text-decoration: none;
+  background: none;
+  color: #ffffff;
+}
+
+
 /* TABS */
 #tabs {
   display: flex;

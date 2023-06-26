@@ -33,11 +33,12 @@ function fillData() {
   const foundRegion = findRegionObject(queries.region);
   const foundDestination = findDestination(foundRegion, queries.destination);
 
+  
   if (foundRegion === undefined) {
     return "Página no encontrada";
   } else {
-    document.getElementById("regionName").innerHTML = foundRegion.regionName;
-    document.getElementById("subtitle").innerHTML = foundRegion.subtitle;
+    document.getElementById("regionName").innerHTML = foundDestination.destinationName;
+    document.getElementById("subtitle").innerHTML = foundDestination.subtitle;
     document.getElementById("subtitle2").innerHTML = foundDestination.subtitle;
 
     const paragraphs = foundDestination.paragraphs[0];

@@ -1,146 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProyectoWeb1_AngieHerrera</title>
     <link rel="stylesheet" href="estilos/estilos_lugar.css" />
     <script type="module" src="js/funcionalidad_lugar.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="header">
-      <nav class="home_nav">
-        <div id="inicio">
-          <span class="uppercase">descubre italia</span>
-          <a href="home.html">Inicio</a>
-          <a href="#">Destinos</a>
-          <a href="#footer">Quiénes somos</a>
-        </div>
-        <form class="search">
-          <input type="search" placeholder="Buscar..." />
-          <button id="busqueda" type="submit">
-            <img
-              src="resources/home/icons/busqueda.svg"
-              alt="iconoBusqueda"
-              width="20px"
-              height="20px"
-            />
-          </button>
-        </form>
-      </nav>
+        <nav class="home_nav">
+            <div id="inicio">
+                <span class="uppercase">descubre italia</span>
+                <a href="home.html">Inicio</a>
+                <a href="home.html">Destinos</a>
+                <a href="#footer">Quiénes somos</a>
+            </div>
+            <form class="search">
+                <input type="search" placeholder="Buscar..." />
+                <button id="busqueda" type="submit">
+                    <img src="resources/home/icons/busqueda.svg" alt="iconoBusqueda" width="20px" height="20px" />
+                </button>
+            </form>
+        </nav>
 
-      <div id="background">
-        <div class="title">
-          <h1 id="regionName">Lacio</h1>
-          <h2 id="subtitle">Centro de Italia</h2>
+        <div id="background">
+            <div class="title">
+                <h1 id="regionName">Lacio</h1>
+                <h2 id="subtitle">Centro de Italia</h2>
+            </div>
+            <button id="top">
+                <a href="#">
+                    <img src="resources/home/icons/angulo-hacia-arriba.svg" alt="iconoTop" width="30px" height="25px" />
+                </a>
+            </button>
         </div>
-        <button id="top">
-          <a href="#">
-            <img
-              src="resources/home/icons/angulo-hacia-arriba.svg"
-              alt="iconoTop"
-              width="30px"
-              height="25px"
-            />
-          </a>
-        </button>
-      </div>
     </div>
 
     <div id="dato">
-      <p id="description">
-        Roma, la capital de Italia y un museo al aire libre único en el mundo,
-        es suficiente para hacer del Lacio una de las regiones más bellas e
-        interesantes. Incluso en términos paisajísticos, cuenta con una zona de
-        gran impacto y notable variedad, con su largo litoral, sus hermosas
-        colinas y sus Apeninos. Un destino del que enamorarse.
-      </p>
+        <p id="description">
+            Roma, la capital de Italia y un museo al aire libre único en el mundo,
+            es suficiente para hacer del Lacio una de las regiones más bellas e
+            interesantes. Incluso en términos paisajísticos, cuenta con una zona de
+            gran impacto y notable variedad, con su largo litoral, sus hermosas
+            colinas y sus Apeninos. Un destino del que enamorarse.
+        </p>
     </div>
 
     <div id="tabs">
-      <a id="cm" onclick="showTab('como_moverse')">¿Cómo movilizarse?</a>
-      <a id="di" onclick="showTab('donde_ir')">¿Dónde ir?</a>
-      <a id="qh" onclick="showTab('que_hacer')">¿Qué hacer?</a>
+        <a id="cm" onclick="showTab('como_moverse')">¿Cómo movilizarse?</a>
+        <a id="di" onclick="showTab('donde_ir')">¿Dónde ir?</a>
+        <a id="qh" onclick="showTab('que_hacer')">¿Qué hacer?</a>
     </div>
 
     <div>
-      <div id="como_moverse">
-        <p>
-          Puedes encontrar información sobre como desplazarte
-          <br>
-          <a id="transportation" class="uppercase" href="https://www.visitlazio.com/muoversi-nel-lazio/ ">aquí</a>
-        </p>
-      </div>
+        <div id="como_moverse">
+            <p>
+                Puedes encontrar información sobre como desplazarte
+                <br>
+                <a id="transportation" class="uppercase" href="https://www.visitlazio.com/muoversi-nel-lazio/ ">aquí</a>
+            </p>
+        </div>
 
-      <div id="donde_ir">
-        <div onclick="" id="img-destino-1" class="destination">
-          <div class="card-title-container">
-            <span id="destination1" class="card-title">Rieti</span>
-            <span id="subtitle1" class="card-subtitle">Tras las huellas de los Sabatini</span>
-          </div>
+        <div id="donde_ir">
+            <div onclick="" id="img-destino-1" class="destination">
+                <div class="card-title-container">
+                    <span id="destination1" class="card-title">Rieti</span>
+                    <span id="subtitle1" class="card-subtitle">Tras las huellas de los Sabatini</span>
+                </div>
+            </div>
+            <div onclick="" id="img-destino-2" class="destination">
+                <div class="card-title-container">
+                    <span id="destination2" class="card-title">Roma</span>
+                    <span id="subtitle2" class="card-subtitle">El irresistible encanto de la Ciudad Eterna</span>
+                </div>
+            </div>
+            <div onclick="" id="img-destino-3" class="destination">
+                <div class="card-title-container">
+                    <span id="destination3" class="card-title">Viterbo</span>
+                    <span id="subtitle3" class="card-subtitle">La región de Tuscia</span>
+                </div>
+            </div>
         </div>
-        <div onclick="" id="img-destino-2" class="destination">
-          <div class="card-title-container">
-            <span id="destination2" class="card-title">Roma</span>
-            <span id="subtitle2" class="card-subtitle">El irresistible encanto de la Ciudad Eterna</span>
-          </div>
-        </div>
-        <div onclick="" id="img-destino-3" class="destination">
-          <div class="card-title-container">
-            <span id="destination3" class="card-title">Viterbo</span>
-            <span id="subtitle3"  class="card-subtitle">La región de Tuscia</span>
-          </div>
-        </div>
-      </div>
 
-      <div id="que_hacer">
-        <p class="tab_title" id="title_wtd"><b>Qué ver en Lacio: 4 paradas obligatorias</b></p>
-        <img id="image_wtd" src="resources/region/lacio/wts/portrait.webp" alt="Que hacer">
-        <div class="paragraph">
-            <p id="paragraph1">Además de las principales ciudades, Lacio ofrece muchas atracciones.
-                La primera es Civita di Bagnoregio, un lugar encantador en la zona de Viterbo, llamada la ciudad moribunda por la precariedad de su estructura: se asienta sobre un afloramiento tobáceo en continua erosión.
-            </p>
-            <p id="paragraph2">
-                La isla de Ponza es un destino glamuroso para los amantes del mar: es la principal de las islas Pontinas y cuenta con un mar cristalino, costas arenosas y cuevas fascinantes.
-            </p>
-            <p id="paragraph3">
-                La inmersión en la naturaleza está garantizada en el lago de Bracciano, de origen volcánico y poblado desde el neolítico, con un paisaje de postal único gracias a sus bosques, caseríos, pueblos históricos y colinas.
-            </p>
+        <div id="que_hacer">
+            <p class="tab_title" id="title_wtd"><b>Qué ver en Lacio: 4 paradas obligatorias</b></p>
+            <img id="image_wtd" src="resources/region/lacio/wts/portrait.webp" alt="Que hacer">
+            <div class="paragraph">
+                <p id="paragraph1">Además de las principales ciudades, Lacio ofrece muchas atracciones.
+                    La primera es Civita di Bagnoregio, un lugar encantador en la zona de Viterbo, llamada la ciudad
+                    moribunda por la precariedad de su estructura: se asienta sobre un afloramiento tobáceo en continua
+                    erosión.
+                </p>
+                <p id="paragraph2">
+                    La isla de Ponza es un destino glamuroso para los amantes del mar: es la principal de las islas
+                    Pontinas y cuenta con un mar cristalino, costas arenosas y cuevas fascinantes.
+                </p>
+                <p id="paragraph3">
+                    La inmersión en la naturaleza está garantizada en el lago de Bracciano, de origen volcánico y
+                    poblado desde el neolítico, con un paisaje de postal único gracias a sus bosques, caseríos, pueblos
+                    históricos y colinas.
+                </p>
+            </div>
         </div>
-      </div>
     </div>
 
     <div id="footer">
-      <div>
-        <p>Diseño y Producción - Angie Herrera</p>
-        <p>Sígueme</p>
-        <button id="">
-          <img
-            src="resources/home/icons/linkedin.svg"
-            alt="linkedin"
-            width="30px"
-            height="30px"
-          />
-        </button>
-        <button id="">
-          <img
-            src="resources/home/icons/github.svg"
-            alt="github"
-            width="30px"
-            height="30px"
-          />
-        </button>
-      </div>
-      <a href="">
-        <img
-          src="resources/home/icons/cuota.svg"
-          alt="compartir"
-          width="25px"
-          height="25px"
-        />
-        Compartir
-      </a>
+        <div>
+            <p>Diseño y Producción - Angie Herrera</p>
+            <p>Sígueme</p>
+            <button>
+                <a href="https://www.linkedin.com/in/angie-herrera-539b62263/" target="_blank">
+                    <img src="resources/home/icons/linkedin.svg" alt="linkedin" width="30px" height="30px" />
+                </a>
+            </button>
+            <button>
+                <a href="https://github.com/AngieH0506" target="_blank">
+                    <img src="resources/home/icons/github.svg" alt="github" width="30px" height="30px" />
+                </a>
+            </button>
+        </div>
+        <a href="compartir.html" target="_blank">
+            <img src="resources/home/icons/cuota.svg" alt="compartir" width="25px" height="25px" />
+            Compartir
+        </a>
     </div>
-  </body>
+
+</body>
+
 </html>
